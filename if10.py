@@ -1,4 +1,4 @@
-def main(temp):
+def main(t):
     """
     Display the message according to the following temperature conditions given to you in Celsius:
     Temp<0: "Freezing"
@@ -13,4 +13,15 @@ def main(temp):
     Returns:
         string: the message to print
     """
-    return
+    if t < 0:
+        return "Freezing"
+    if 1 <= t <= 10:
+        return "Very Cold"
+    if 11 <= t <= 20:
+        return "Cold"
+    if 21 <= t <= 30:
+        return "Normal"
+    if 31 <= t <= 40:
+        return "Hot"
+    if t > 40:
+        return "Very Hot"
